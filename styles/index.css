@@ -1,0 +1,268 @@
+/* ============================================================헤더 고정 */
+#header-wrap {
+    width:1760px;
+    margin-top:25px;
+    display:flex; justify-content:space-between; align-items:center;
+    position:fixed; z-index:999; left:50%; transform: translateX(-50%)/* nav, a태그 중앙으로 보냄 */
+}
+#header-wrap nav {display:flex; gap:20px;}
+#header-wrap nav a {
+    padding:12px 18px;
+    border-radius:50px;
+    line-height:16px;
+    border:1px solid transparent;
+}
+#header-wrap nav a.active {
+    background:#FAFAFA;
+    border:1px solid #3A3A3A;
+}
+#header-wrap > a {
+    background:#3A3A3A;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:50px;
+    line-height:16px;
+}
+/* =========================================================================================================메인 */
+#wrap {height:100vh;}
+#wrap .swiper-wrapper {/* cursor:pointer; */}
+#wrap .swiper-wrapper .intro,
+#wrap .swiper-wrapper .profile {
+    background:#FAFAFA;
+}
+#wrap .swiper-wrapper h3 {
+    font-size:1.875rem;
+    font-weight:600;
+}
+/* ========================================================================================================= 인트로 s */
+#wrap .swiper-wrapper .intro {}
+#wrap .swiper-wrapper .intro img {}
+#wrap .swiper-wrapper .intro .info {
+    width:1760px;
+    display:flex; justify-content:space-between;
+    position:absolute; bottom:80px; left:50%; transform:translateX(-50%);
+}
+#wrap .swiper-wrapper .intro .info p {}
+/* ========================================================================================================= 인트로 e */
+
+/* ========================================================================================================= 프로필 s */
+#wrap .swiper-wrapper .profile {
+    position:relative;
+}
+#wrap .swiper-wrapper .profile h3 {
+    position:absolute; top: 107px; left:167px;
+}
+/* ------------------------------------------------------------------------------------ 정보 */
+#wrap .swiper-wrapper .profile .my-info {
+    position:absolute; bottom:125px; left:167px;
+    display:flex; flex-flow:column; gap:60px;
+}
+#wrap .swiper-wrapper .profile .my-info img {
+    width:184px; height:184px;
+}
+#wrap .swiper-wrapper .profile .my-info p {
+    font-size:1.875rem;
+    font-weight:200;
+    line-height:1.5;
+}
+#wrap .swiper-wrapper .profile .my-info p em {
+    font-weight:500;
+}
+#wrap .swiper-wrapper .profile .my-info dl {}
+#wrap .swiper-wrapper .profile .my-info dl dt {
+    font-size:1.125rem;
+    font-weight:600;
+    margin-top:30px;
+}
+#wrap .swiper-wrapper .profile .my-info dl dt:first-of-type {margin-top:0;}
+#wrap .swiper-wrapper .profile .my-info dl dd {
+    font-size:0.938rem;
+    margin-top:16px;
+}
+/* ------------------------------------------------------------------------------------ 커리어 */
+
+#wrap .swiper-wrapper .profile .career-info {
+    position:absolute; bottom:125px; right:167px;
+    display:flex; flex-flow:row nowrap; gap:120px;
+}
+/* 공통 */
+#wrap .swiper-wrapper .profile .career-info h4 {
+    font-weight:600;
+    font-size:1.25rem;
+    margin-bottom:30px;
+}
+#wrap .swiper-wrapper .profile .career-info .rignt dl {}
+#wrap .swiper-wrapper .profile .career-info dl dt {
+    font-size:0.938rem;
+}
+#wrap .swiper-wrapper .profile .career-info dl dd {
+    text-align:right;
+    font-size:0.938rem;
+    color:#888888;
+}
+
+/* left */
+#wrap .swiper-wrapper .profile .career-info .left {
+    width:300px; height:620px;
+    display:flex; flex-flow:column nowrap; justify-content:space-between;
+}
+#wrap .swiper-wrapper .profile .career-info .left .group {}
+#wrap .swiper-wrapper .profile .career-info .left dl {
+    display: grid;
+    
+    row-gap: 25px;
+}
+#wrap .swiper-wrapper .profile .career-info .left .about-me dl {
+    grid-template-columns: 1fr 132px;
+}
+#wrap .swiper-wrapper .profile .career-info .left .education dl {
+    grid-template-columns: 133px 1fr;
+}
+#wrap .swiper-wrapper .profile .career-info .left .license dl {
+    grid-template-columns: 193px 1fr;
+}
+/* right */
+#wrap .swiper-wrapper .profile .career-info .right {
+    width:414px; height:620px;
+    display:flex; flex-flow:column nowrap; justify-content:space-between;
+}
+#wrap .swiper-wrapper .profile .career-info .right dl {
+    display: grid;
+
+    row-gap: 25px;
+}
+
+#wrap .swiper-wrapper .profile .career-info .right .career dl {
+    grid-template-columns: 216px 1fr;
+}
+#wrap .swiper-wrapper .profile .career-info .right .career dl dd:nth-of-type(4) {
+    line-height:31px;
+}
+
+#wrap .swiper-wrapper .profile .career-info .right .skill dl {
+    grid-template-columns: 1fr 280px;
+}
+#wrap .swiper-wrapper .profile .career-info .right .skill dl dd {
+    background:#d9d9d9;
+    border-radius:50px;
+}
+#wrap .swiper-wrapper .profile .career-info .right .skill dl dd .bar {
+    height: 14px;
+    background:#000;
+    border-radius: 50px;
+}
+/* ========================================================================================================= 프로필 e */
+
+/* ========================================================================================================= 웹사이트 리디자인 s */
+#wrap .swiper-wrapper .web-redesign {
+    background:url(../images/bg_001.png) no-repeat center;
+}
+#wrap .swiper-wrapper .web-redesign #redesign {}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-wrapper {}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide {
+    height: 100vh;
+    position:relative;
+    /* background:url(../images/bg_001.png) no-repeat center; */
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .rede-img {
+    position:absolute; top:0; right:0;
+    width:668px; height:100%;
+    background:#3A3A3A;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .preview {
+    position:absolute; right:167px; top:50%; transform:translateY(-50%);
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .preview img {
+    width:786px; height:511px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide h3 {
+    position:absolute; top: 107px; left:167px;
+}
+/* ----------------------------------------------------------------------------------------- 작업 컨텐츠 정보 */
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content {
+    position:absolute; bottom:125px; left:167px;
+    display:flex; flex-flow:column nowrap; gap:120px;
+}
+/* text */
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .text {}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .text h2 {
+    font-size:3.125rem; font-weight:600;
+    margin-bottom:25px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .text p {
+    font-size:1.25rem; font-weight:300;
+}
+/* site */
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .site {
+    display:flex;/* a간격 사이에 들어가있는 여백 지우기 위해서 */ gap:21px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .site > a {
+    padding:0 22px; line-height:48px;
+    border-radius:50px;
+    border:1px solid #3A3A3A;
+    font-size:1.125rem;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .site > a:nth-child(1) {background:#3A3A3A; color: #fff; font-weight:500;}
+/* info */
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info {}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info .contribution {
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info .contribution h5 {
+    font-size:1.125rem; font-weight:500;
+    margin-bottom:20px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info .contribution p {
+    font-size:0.938rem;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info dl {
+    display: grid;
+    width:458px;
+    margin-top:28px;
+    grid-template-columns: 1fr 312px;
+    row-gap: 28px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info dl dt {
+    font-size:1.125rem; font-weight:500;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info dl dt:nth-of-type(2) {
+    line-height:36px;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info dl dd {
+    font-size:0.938rem;
+}
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-slide .content .info dl dd:nth-of-type(2) {
+    display:flex; align-items:center; gap:10px;
+}
+
+/* 방향 기본 디자인 제거 */
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-button-prev::after,
+#wrap .swiper-wrapper .web-redesign #redesign .swiper-button-next::after {}
+/* ========================================================================================================= 웹사이트 리디자인 e */
+
+/* ========================================================================================================= 배너 자인 s */
+#wrap .swiper-wrapper .design {
+    position:relative;
+    background:url(../images/bg_001.png) no-repeat center;
+}
+#wrap .swiper-wrapper .design h3 {
+    position:absolute; top: 107px; left:167px;
+}
+/* ========================================================================================================= 배너 자인 e */
+
+/* ========================================================================================================= 컨택 s */
+#wrap .swiper-wrapper .contact {}
+#wrap .swiper-wrapper .contact img {}
+#wrap .swiper-wrapper .contact .info {
+    display:flex; justify-content:center; gap:133px;
+    position:absolute; bottom:80px; left:50%; transform:translateX(-50%);
+}
+#wrap .swiper-wrapper .contact .info p {}
+#wrap .swiper-wrapper .contact .info p em {
+    font-weight:600;
+    font-size:1.125rem;
+    margin-right:16px;
+}
+#wrap .swiper-wrapper .contact .info p span {
+    font-size:0.938rem;
+}
+/* ========================================================================================================= 컨택 e */
