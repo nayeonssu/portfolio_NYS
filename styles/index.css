@@ -364,6 +364,13 @@
 #wrap .swiper-wrapper .game-design #game-d .swiper-slide h3 {
     position:absolute; top: 107px; left:167px;
 }
+/* 헥사곤즈 */
+#wrap .swiper-wrapper .game-design #game-d .game4 .preview {
+    position:absolute; right:287px; top:50%; transform:translateY(-50%);
+}
+#wrap .swiper-wrapper .game-design #game-d .game4 .preview img {
+    width:648px; height:329px;
+}
 /* ----------------------------------------------------------------------------------------- 작업 컨텐츠 정보 */
 #wrap .swiper-wrapper .game-design #game-d .swiper-slide .content {
     position:absolute; bottom:125px; left:167px;

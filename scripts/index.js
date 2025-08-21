@@ -91,6 +91,16 @@ popup.addEventListener('click',()=>{
     wrap.mousewheel.enable()//스크롤 기능 풀기
 })/* 팝업을 실행했을 때 아무곳이나 누르면 닫힌다. */
 
+/* ===================================================================================================== 게임 디자인 */
+const gamedesign = new Swiper('#game-d',{
+    autoplay:{delay:4000},/* 속도 */
+    loop:true,/* 무한반복 */
+    navigation:{
+        prevEl:'#game-d .swiper-button-prev',
+        nextEl:'#game-d .swiper-button-next',
+    },
+})
+
 /* ===================================================================================================== 컨택 */
 const contactLink = document.querySelector('#header-wrap > a'); // nav 밖 a
 
