@@ -355,6 +355,14 @@
     width:668px; height:100%;
     background:#3A3A3A;
 }
+/* 각 프로젝트별 배경 */
+#wrap .swiper-wrapper .game-design #game-d .game1 .rede-img {background:url(../images/bg_game_001.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game2 .rede-img {background:url(../images/bg_game_001.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game3 .rede-img {background:url(../images/bg_game_003.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game4 .rede-img {background:url(../images/bg_game_004.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game5 .rede-img {background:url(../images/bg_game_005.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game6 .rede-img {background:url(../images/bg_game_006.jpg);}
+#wrap .swiper-wrapper .game-design #game-d .game7 .rede-img {background:url(../images/bg_game_004.jpg);}
 #wrap .swiper-wrapper .game-design #game-d .swiper-slide .preview {
     position:absolute; right:504px; top:50%; transform:translateY(-50%);
 }
@@ -365,10 +373,10 @@
     position:absolute; top: 107px; left:167px;
 }
 /* 헥사곤즈 */
-#wrap .swiper-wrapper .game-design #game-d .game4 .preview {
+#wrap .swiper-wrapper .game-design #game-d .game5 .preview {
     position:absolute; right:287px; top:50%; transform:translateY(-50%);
 }
-#wrap .swiper-wrapper .game-design #game-d .game4 .preview img {
+#wrap .swiper-wrapper .game-design #game-d .game5 .preview img {
     width:648px; height:329px;
 }
 /* ----------------------------------------------------------------------------------------- 작업 컨텐츠 정보 */
